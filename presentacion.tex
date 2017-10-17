@@ -115,6 +115,9 @@ Claramente es algo que puede variar, no dentro de cada objeto, sino que cada obj
 \includegraphics[width=0.5\textwidth]{h_m.pdf}
 \end{center}
 }
+\note{
+El sexo de una persona, así como su estado civil son ejemplos de variables del tipo nominal.
+}
 
 
 
@@ -144,7 +147,9 @@ Claramente es algo que puede variar, no dentro de cada objeto, sino que cada obj
 \includegraphics[width=0.75\textwidth]{intervalos.pdf}
 \end{center}
 }
-
+\note{
+Un ejemplo de este tipo de variables es el coeficiente de inteligencia de una persona, se mide en valores como 60, 61, 62, etc. Pero no tiene sentido decir que una persona tiene 0 de coeficiente o que una con 60 es el doble de inteligente que una con 30.
+}
 
 
 \frame{
@@ -156,6 +161,9 @@ Claramente es algo que puede variar, no dentro de cada objeto, sino que cada obj
 \begin{center}
 \includegraphics[width=0.8\textwidth]{racional.pdf}
 \end{center}
+}
+\note{
+Un ejemplo de este tipo de escalas la podemos ver en la altura de una persona, tiene sentido decir que una persona es el doble de alto que otra.
 }
 
 
@@ -174,5 +182,103 @@ Claramente es algo que puede variar, no dentro de cada objeto, sino que cada obj
 Cabe notar que en nuestra imagen las escalas se muestran en el orden en el que fueron presentadas, es decir de la más baja a la más alta jerarquía. Al decir "{}bajar"{} la escala, nos referimos a "{}subir"{} según la imagen.
 }
 
+
+
+\frame{
+\frametitle{Tabulación}
+\begin{block}{}
+	Por lo general, el análisis estadístico de datos inicia con un gran volumen de información en bruto. El primer paso para el análisis de datos es organizarlo esa información.
+\end{block}
+Veamos por ejemplo nuestra tabla de autores, en la tabla de idiomas podemos notar que tenemos: Francés, Francés, Inglés, Español, Francés, Inglés, Ingles, Inglés, Inglés, Ruso, Español, Francés, Alemán, Inglés, Francés, Ruso, Inglés, Francés, Español, Inglés, Inglés, Español, Español, Alemán y Francés.
+}
+
+
+\frame{
+\frametitle{Tabulación}
+\begin{block}{}
+	Por lo general, el análisis estadístico de datos inicia con un gran volumen de información en bruto. El primer paso para el análisis de datos es organizarlo esa información.
+\end{block}
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+	\textbf{Idioma} & \textbf{Frecuencia}\\ \midrule
+	Francés & 7\\
+	Inglés & 9\\
+	Español & 5\\
+	Alemán & 2\\
+	Ruso & 2\\
+\bottomrule
+\end{tabular}
+\end{center}
+}
+
+
+
+\frame{
+\frametitle{Tabulación}
+\begin{columns}
+	\column{0.5\textwidth}
+	\begin{block}{}
+	Por otro lado, cuando se trata de información más fina, la tabulación puede no ayudarnos a resumir la información con la que se cuenta.
+	\end{block}
+	\column{0.5\textwidth}
+	\begin{center}
+\tiny
+\begin{tabular}{lr}
+\toprule
+	\textbf{Edad} & \textbf{Frecuencia}\\ \midrule
+      30 & 1 \\
+      36 & 1 \\
+      38 & 1 \\
+      39 & 1 \\
+      40 & 1 \\
+      46 & 2 \\
+      47 & 1 \\
+      49 & 2 \\
+      51 & 1 \\
+      58 & 1 \\
+      60 & 1 \\
+      67 & 1 \\
+      68 & 1 \\
+      71 & 1 \\
+      75 & 1 \\
+      77 & 1 \\
+      79 & 1 \\
+      80 & 1 \\
+      82 & 1 \\
+      83 & 2 \\
+      84 & 1 \\
+      88 & 1 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{columns}
+}
+
+
+
+\frame{
+\frametitle{Tabulación}
+\begin{columns}
+	\column{0.5\textwidth}
+	\begin{block}{}
+	Cuando esto ocurre, es común optar por representar la información en categorías separadas por intervalos de datos.
+	\end{block}
+	\column{0.5\textwidth}
+	\begin{center}
+\begin{tabular}{lr}
+\toprule
+	\textbf{Edades} & \textbf{Frecuencia}\\ \midrule
+      30 - 39 & 4 \\
+      40 - 49 & 6 \\
+      50 - 59 & 2 \\
+      60 - 69 & 3 \\
+      70 - 79 & 4 \\
+      80 - 89 & 6 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{columns}
+}
 
 \end{document}
